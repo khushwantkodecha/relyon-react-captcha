@@ -60,7 +60,47 @@ const App = () => {
   }, []);
 
   const generateCaptcha = () => {
+    // first method to generate captcha
+
     const data = Math.random().toString(36).substr(2, 6);
+
+    // second method to generate captcha
+
+    // const data1 = Math.floor(Math.random() * 10);
+    // const data2 = Math.floor(Math.random() * 10);
+    // const stringArrary = [
+    //   "a",
+    //   "b",
+    //   "c",
+    //   "d",
+    //   "e",
+    //   "f",
+    //   "g",
+    //   "h",
+    //   "i",
+    //   "j",
+    //   "k",
+    //   "l",
+    //   "m",
+    //   "n",
+    //   "o",
+    //   "p",
+    //   "q",
+    //   "r",
+    //   "s",
+    //   "t",
+    //   "u",
+    //   "v",
+    //   "w",
+    //   "x",
+    //   "y",
+    //   "z",
+    // ];
+    // const data3 = stringArrary[Math.floor(Math.random() * 26)];
+    // const data4 = Math.floor(Math.random() * 10);
+    // const data5 = Math.floor(Math.random() * 10);
+    // const data = `${data1}${data2}${data3}${data4}${data5}`;
+
     setCaptcha(data);
   };
 
@@ -68,6 +108,7 @@ const App = () => {
     e.preventDefault();
     generateCaptcha();
   };
+
   return (
     <div className="signin">
       <img src={Logo} width="250" height="66" alt="logo" />
