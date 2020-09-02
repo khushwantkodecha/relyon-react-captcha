@@ -1,8 +1,10 @@
 ## View demo
 
-[View Demo](https://react-captcha.web.app/)
+[view demo](https://react-captcha.web.app/)
 
-Email for authentication is : test@test.com
+## Email and Password for authentication
+
+Email for authentication is : test@test.com and
 Password for authentication is : 12345
 
 ## procedure to run this project
